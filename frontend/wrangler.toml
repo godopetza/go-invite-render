@@ -1,0 +1,7 @@
+name = "go-invite-render-editor"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+[vars]
+NEXT_PUBLIC_RENDER_SERVER_URL = "https://your-render-server.up.railway.app"
