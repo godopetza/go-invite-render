@@ -3,12 +3,13 @@
 // Returns the rendered PNG directly.
 //
 // Run:
-//   go run main.go
-//   curl -X POST http://localhost:8080/render \
-//     -F "background=@bg.jpg" \
-//     -F 'zones=[{"type":"text","text":"{{guest_name}}","xPct":50,"yPct":30,"fontSize":48,"color":"#fff","fontFamily":"Montserrat","align":"center","widthPct":80}]' \
-//     -F 'fields={"guest_name":"John Doe","event_name":"Wedding 2026"}' \
-//     --output card.png
+//
+//	go run main.go
+//	curl -X POST http://localhost:8080/render \
+//	  -F "background=@bg.jpg" \
+//	  -F 'zones=[{"type":"text","text":"{{guest_name}}","xPct":50,"yPct":30,"fontSize":48,"color":"#fff","fontFamily":"Montserrat","align":"center","widthPct":80}]' \
+//	  -F 'fields={"guest_name":"John Doe","event_name":"Wedding 2026"}' \
+//	  --output card.png
 package main
 
 import (

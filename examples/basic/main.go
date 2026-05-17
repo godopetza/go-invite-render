@@ -19,10 +19,10 @@ func main() {
 	// Define zones (or load from a JSON file)
 	zones := []inviterender.Zone{
 		{
-			ID:         "event",
-			Type:       "text",
-			Text:       "{{event_name}}",
-			XPct:       50, YPct: 22,
+			ID:   "event",
+			Type: "text",
+			Text: "{{event_name}}",
+			XPct: 50, YPct: 22,
 			FontFamily: "CormorantGaramond",
 			FontSize:   52,
 			Color:      "#FFFFFF",
@@ -32,10 +32,10 @@ func main() {
 			Opacity:    1.0,
 		},
 		{
-			ID:         "guest",
-			Type:       "text",
-			Text:       "{{guest_name}}",
-			XPct:       50, YPct: 38,
+			ID:   "guest",
+			Type: "text",
+			Text: "{{guest_name}}",
+			XPct: 50, YPct: 38,
 			FontFamily: "GreatVibes",
 			FontSize:   64,
 			Color:      "#F5E6C8",
@@ -44,10 +44,10 @@ func main() {
 			Opacity:    1.0,
 		},
 		{
-			ID:         "date",
-			Type:       "text",
-			Text:       "{{event_date}}  •  {{venue}}",
-			XPct:       50, YPct: 52,
+			ID:   "date",
+			Type: "text",
+			Text: "{{event_date}}  •  {{venue}}",
+			XPct: 50, YPct: 52,
 			FontFamily: "Montserrat",
 			FontSize:   22,
 			Color:      "#FFFFFFCC",
@@ -60,7 +60,7 @@ func main() {
 	}
 
 	fields := map[string]string{
-		"guest_name":         "Amina Hassan",
+		"guest_name":        "Amina Hassan",
 		"event_name":        "Harusi ya John & Mary",
 		"event_date":        "14 June 2026",
 		"venue":             "Mlimani City Hall, Dar es Salaam",

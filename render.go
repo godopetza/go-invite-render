@@ -22,27 +22,27 @@ import (
 // any background image resolution.
 type Zone struct {
 	ID         string  `json:"id"`
-	Type       string  `json:"type"`        // "text" | "image" | "qr"
-	Text       string  `json:"text"`        // supports {{token}} substitution
-	XPct       float64 `json:"xPct"`        // horizontal centre (0–100)
-	YPct       float64 `json:"yPct"`        // vertical centre (0–100)
-	FontSize   float64 `json:"fontSize"`    // editor-space px (scaled to output)
-	Color      string  `json:"color"`       // "#RRGGBB" or "#RRGGBBAA"
-	FontFamily string  `json:"fontFamily"`  // see Fonts section in README
+	Type       string  `json:"type"`       // "text" | "image" | "qr"
+	Text       string  `json:"text"`       // supports {{token}} substitution
+	XPct       float64 `json:"xPct"`       // horizontal centre (0–100)
+	YPct       float64 `json:"yPct"`       // vertical centre (0–100)
+	FontSize   float64 `json:"fontSize"`   // editor-space px (scaled to output)
+	Color      string  `json:"color"`      // "#RRGGBB" or "#RRGGBBAA"
+	FontFamily string  `json:"fontFamily"` // see Fonts section in README
 	Bold       bool    `json:"bold"`
 	Italic     bool    `json:"italic"`
 	Underline  bool    `json:"underline,omitempty"`
-	Align      string  `json:"align"`       // "left" | "center" | "right"
-	Opacity    float64 `json:"opacity"`     // 0.0–1.0, defaults to 1.0
+	Align      string  `json:"align"`   // "left" | "center" | "right"
+	Opacity    float64 `json:"opacity"` // 0.0–1.0, defaults to 1.0
 	// Image zone
-	ImageSrc    string  `json:"imageSrc,omitempty"`   // URL or data URI
-	FrameShape  string  `json:"frameShape,omitempty"` // circle|oval|heart|arch|diamond|hexagon|none
-	FrameColor  string  `json:"frameColor,omitempty"`
-	WidthPct    float64 `json:"widthPct,omitempty"`
-	HeightPct   float64 `json:"heightPct,omitempty"`
+	ImageSrc     string  `json:"imageSrc,omitempty"`   // URL or data URI
+	FrameShape   string  `json:"frameShape,omitempty"` // circle|oval|heart|arch|diamond|hexagon|none
+	FrameColor   string  `json:"frameColor,omitempty"`
+	WidthPct     float64 `json:"widthPct,omitempty"`
+	HeightPct    float64 `json:"heightPct,omitempty"`
 	ImageOffsetX float64 `json:"imageOffsetX,omitempty"`
 	ImageOffsetY float64 `json:"imageOffsetY,omitempty"`
-	ImageScale  float64 `json:"imageScale,omitempty"`
+	ImageScale   float64 `json:"imageScale,omitempty"`
 }
 
 // cardH is the editor coordinate-space height. Font sizes and Y positions
